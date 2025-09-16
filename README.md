@@ -13,9 +13,8 @@
 
 # Circuit Diagram:
 
----
-To upload
---
+<img width="1544" height="793" alt="Screenshot 2025-09-16 132757" src="https://github.com/user-attachments/assets/d1ce8a99-fc93-4eb2-9dce-42f8254059b7" />
+
 
 # Procedure // Modify the procedure based on your circuit
 
@@ -56,13 +55,38 @@ Step 7: Save Your Work
 
 
 # Program
+```
+void setup()
+{
+  pinMode(12,OUTPUT);
+  pinMode(13,OUTPUT);
+  pinMode(A0,INPUT);
+  Serial.begin(9600);
 
----
-To upload
---
+}
+
+void loop()
+{
+  float value=analogRead(A0);
+  float temperatureC=((((value*5)/1023)-0.5)*100);
+  Serial.println("temperature");
+  Serial.println(temperatureC);
+  
+  if(temperatureC > 20)
+  {
+    digitalWrite(12,HIGH);
+    digitalWrite(13,LOW);
+  }
+  else
+  {
+    digitalWrite(12,LOW);
+    digitalWrite(13,LOW);
+  }
+}
+```
+# output:
+https://drive.google.com/file/d/1tl17NVhl4ztbSkW-mAa4Q709Qm3djX5u/view?usp=sharing
 
 # Result
-
----
-To upload
---
+temperature
+24.78
