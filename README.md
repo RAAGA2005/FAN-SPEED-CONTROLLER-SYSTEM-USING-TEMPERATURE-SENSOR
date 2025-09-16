@@ -85,7 +85,9 @@ void loop()
 }
 ```
 # output:
-https://drive.google.com/file/d/1tl17NVhl4ztbSkW-mAa4Q709Qm3djX5u/view?usp=sharing
+
+
+https://github.com/user-attachments/assets/8d06fc1f-fc0d-43ac-8153-8250edfdf72e
 
 # Result
 temperature
